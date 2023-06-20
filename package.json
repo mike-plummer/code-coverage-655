@@ -1,0 +1,21 @@
+{
+  "name": "code-coverage-655",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "clean": "rimraf ./.nyc_output && rimraf ./coverage",
+    "test":  "npm run clean && npx cypress run"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.22.5",
+    "@cypress/code-coverage": "^3.10.7",
+    "babel-plugin-istanbul": "^6.1.1",
+    "cypress": "^12.15.0",
+    "istanbul": "^0.4.5",
+    "nyc": "^15.1.0",
+    "rimraf": "^5.0.1"
+  }
+}
